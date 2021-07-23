@@ -30,3 +30,9 @@
 * `df.loc[~df[key] == value]` -> the condition is not True
 #### Reset index after filter the data
 * `df.reset_index(grop=True)`
+### Conditional changes
+* `df.loc[df[condition], modifying column] = modifying value`
+### Aggregate Statistics (Groupby)
+`df.groupby(column_name).attr`
+### Work with large amounts of data
+`for df in pd.read_csv(csv_name, chunksize=num)`
